@@ -1,0 +1,10 @@
+services:
+  discord-bot:
+    build: .
+    container_name: discord-bot-open-weather-api
+    environment:
+      - DISCORD_TOKEN=${DISCORD_TOKEN}
+      - OPENWEATHERMAP_API_KEY=${OPENWEATHERMAP_API_KEY}
+    volumes:
+      - .:/app
+    restart: unless-stopped

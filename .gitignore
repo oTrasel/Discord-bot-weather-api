@@ -1,0 +1,5 @@
+# Ignore arquivo de configuração sensível
+.env
+
+# Ignore dependências instaladas
+/vendor
